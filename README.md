@@ -1,2 +1,2 @@
 # Algorithms and Optimizations Assignment 3 - Language Comparison
-Languages used: C++
+Languages used: C++,Java, Python
