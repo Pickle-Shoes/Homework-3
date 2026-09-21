@@ -12,6 +12,7 @@ int main(){
     // Define Data Size
     int max = 10;
     int increase = 50000;
+    int high = 5000;
 
     // Create Empty Vectors
     vector<int> data, sorted;
@@ -25,7 +26,7 @@ int main(){
         data.resize(n * increase);
         for(int loop = (n - 1) * increase; loop < n * increase; loop++)
         {
-            data[loop] = rand() % 5000 + 1;
+            data[loop] = rand() % high + 1;
         }
 
         // Sort the vector (using quick sort) and time it
