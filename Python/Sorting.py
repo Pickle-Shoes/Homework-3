@@ -5,6 +5,7 @@ data_list = []
 sorted_list = []
 max_iterations = 10
 increase = 50000
+high = 5000
 
 #I got this next chunk of code from python
 # partition function
@@ -58,13 +59,13 @@ def generate_data():
 
         data_list.extend([None]*increase)  #creates 50000 new spaces at end of list
         for k in range((i-1)*increase, i*increase):
-            data_list[k] = random.randint(1, 5000) #fill with random data
+            data_list[k] = random.randint(1, high) #fill with random data
         sorted_list = data_list.copy()
         start_time = time.perf_counter()
         quickSort(sorted_list, 1, i * increase - 1)
         end_time = time.perf_counter()
         execution_time = (end_time - start_time) * 1000
-        print("Data set:", i, f"Execution time: {execution_time:.6f} ms")
+        print("Data set: ", i, f"Execution time: {execution_time:.6f} ms. Data Size: {i * increase}")
 
 
 #print(len(sorted_list))

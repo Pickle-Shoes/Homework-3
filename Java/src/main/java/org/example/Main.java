@@ -83,7 +83,7 @@ public class Main {
             // Stop and calculate time
             long end = System.nanoTime();
             long time = (end - start) / 1000000; // Divide by 1,000,000 to convert from nanoseconds to milliseconds
-            System.out.println("Data from " + loop + " took " + time + " milliseconds to sort.");
+            System.out.println("Data from " + loop + " took " + time + " milliseconds to sort. Data Size: " + increment * loop + ".");
         }
     }
 }
