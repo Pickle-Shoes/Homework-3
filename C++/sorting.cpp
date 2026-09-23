@@ -37,7 +37,7 @@ int main(){
         auto end = chrono::high_resolution_clock::now();
 
         auto duration = chrono::duration_cast<chrono::milliseconds>(end - start);
-        cout << "Data Set (" << n << ") Time: " << duration.count() << "ms." << endl;
+        cout << "Data Set (" << n << ") Time: " << duration.count() << "ms. Data Size: " << increase * n << "." << endl;
     }
 
     return 0;
