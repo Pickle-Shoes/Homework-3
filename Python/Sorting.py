@@ -6,7 +6,7 @@ sorted_list = []
 max_iterations = 10
 increase = 50000
 
-#I got this next chunk of code from python
+#I got this next chunk of code from geeks for geeks
 # partition function
 def partition(arr, low, high):
     
